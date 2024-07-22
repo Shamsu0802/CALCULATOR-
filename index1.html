@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Ensure elements stack vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('Capture1.png'); /* Set background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #191818; /* Adjust heading text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Basic Calculator</h1>
+    </div>
+
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <div class="row">
+                <button id="7">7</button>
+                <button id="8">8</button>
+                <button id="9">9</button>
+                <button class="operator" id="/">/</button>
+            </div>
+            <div class="row">
+                <button id="4">4</button>
+                <button id="5">5</button>
+                <button id="6">6</button>
+                <button class="operator" id="*">*</button>
+                
+            </div>
+            <div class="row">
+                <button id="1">1</button>
+                <button id="2">2</button>
+                <button id="3">3</button>
+                <button class="operator" id="-">-</button>
+            </div>
+            <div class="row">
+                <button class="operator" id="clear">C</button>
+                <button id="0">0</button>
+                <button id="decimal">.</button>
+                <button class="operator" id="+">+</button>
+            </div>
+            <div class="row">
+                <button class="equal" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
